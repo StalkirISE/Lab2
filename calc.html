@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+ <style>
+ </style>
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>Lab 2</TITLE>
+</head>
+<body>
+<input type="number" id="MyA" placeholder=" число a"/>
+<br>
+<input type="number" id="MyB" placeholder="число b"/>
+<br>
+<input type="button" id="btn1" value="+" onclick="Plus()"/>
+<input type="button" id="btn2" value="-" onclick="Minus()"/>
+<input type="button" id="btn3" value="*" onclick="Multiply()"/>
+<input type="button" id="btn4" value="/" onclick="Divide()"/>
+<br>
+<p id="result"></p>
+<script>
+function Plus()
+{
+var a = Number(document.getElementById('MyA').value);
+var b = Number(document.getElementById('MyB').value);
+var result = a + b;
+
+
+  
+
+          document.getElementById("result").innerHTML = result;
+ 
+}
+function Minus()
+{
+var a=document.getElementById('MyA').value;
+var b=document.getElementById('MyB').value;
+var result = a - b;
+
+          document.getElementById("result").innerHTML = result;
+ 
+}
+function Multiply()
+{
+var a=document.getElementById('MyA').value;
+var b=document.getElementById('MyB').value;
+var result = a * b;
+
+          document.getElementById("result").innerHTML = result;
+ 
+}
+function Divide()
+{
+var a=document.getElementById('MyA').value;
+var b=document.getElementById('MyB').value;
+var result = a / b;
+switch (b) 
+{
+case "0":
+document.getElementById("result").innerHTML= 'На ноль делить незльзя! ';
+document.getElementById("result").style = "text-colour:red" ;
+break;
+ default:
+document.getElementById("result").innerHTML = result;
+ }
+}
+</script>
+</body>
+</html>

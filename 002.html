@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>Lab 2</TITLE>
+</head>
+<body>
+<input type="number" id="MyA" placeholder=" число a"/>
+<br>
+<input type="number" id="MyB" placeholder="число b"/>
+<br>
+<input type="number" id="MyC" placeholder="число c"/>
+<br>
+<input type="button" id="btn1" value="дискриминант" onclick="calcD()"/>
+<input type="button" id="btn2" value="сравненние а и b" onclick="IsEqual()"/>
+<script>
+function calcD()
+{
+var a=document.getElementById('MyA').value;
+var b=document.getElementById('MyB').value;
+var c=document.getElementById('MyC').value;
+alert(b*b - 4*a*c);
+}
+function IsEqual()
+{
+var d=document.getElementById('MyA').value;
+var e=document.getElementById('MyB').value;
+if (d==e) alert("equal");
+else alert("not equal");
+}
+</script>
+</body>
+</html>

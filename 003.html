@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8"/>
+<title>Lab 2</TITLE>
+</head>
+<body>
+<script>
+ if (confirm('Доброго времени суток, у этой страницы есть к вам вопрос, вы готовы ответить?'))
+ {   
+ var name = prompt('Как вас зовут?','Введите сюда ваше имя');   
+ alert("Ваше имя - "+name);
+ } 
+АskAge();
+function АskAge()
+ {
+ var age = prompt('сколько вам лет?','Введите сюда ваш возраст');
+ if (confirm('Это точно ваш возраст?'+age))
+  {
+  alert("Спасибо, что уделилили время");
+  }
+  else
+  {
+  АskAge();
+ }
+ }
+</script>
+</body>
+</html>
